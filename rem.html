@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BSE - 7A</title>
+    <link rel="icon" href="icon.png" type="image/icon type">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading"><b>BSE - 7A</b></div>
+            <div class="list-group list-group-flush">
+                <a href="index.html" class="list-group-item list-group-item-action bg-light">Data Mining</a>
+                <a href="dm-lab.html" class="list-group-item list-group-item-action bg-light">Data Mining Lab</a>
+                <a href="sw-testing.html" class="list-group-item list-group-item-action bg-light">Software Testing</a>
+                <a href="sw-testing-lab.html" class="list-group-item list-group-item-action bg-light">Software Testing Lab</a>
+                <a href="ds.html" class="list-group-item list-group-item-action bg-light">Data Science</a>
+                <a href="de.html" class="list-group-item list-group-item-action bg-light">Differential Equations</a>
+                <a href="assign.html" class="list-group-item list-group-item-action bg-light">Assignments</a>
+                <a href="quiz.html" class="list-group-item list-group-item-action bg-light">Quizzes</a>
+                <a href="tt.html" class="list-group-item list-group-item-action bg-light">Time Table</a>
+                <a href="rem.html" class="list-group-item list-group-item-action bg-light">Reminders</a>
+                <a href="credits.html" class="list-group-item list-group-item-action bg-light">Credits</a>
+
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-info" id="menu-toggle"><i class="fas fa-bars"></i></button>
+                <marquee></marquee>
+
+
+            </nav>
+            <div class="container-fluid">
+
+
+                <!--Subject Information-->
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="https://drive.google.com/file/d/1Wz3e48yLIAsUZlCecjYwHhu0XC2G53f_/view?usp=sharing" target="_blank">Download Semester Calendar</a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://drive.google.com/file/d/1aWPL4B-5PKEjHrvYwIfw0xTKly_jKr5f/view?usp=sharing" target="_blank">Download Course Catalog</a>
+                    </div>
+                </div>
+                <hr style="height:1px;border:none;color:#333;background-color:#333;">
+                <!--Subject Information Ends-->
+
+                <br>
+                <!--Lectures-->
+
+                <h6><b>*These dates may change according to situation.</b></h6>
+
+                <div class="wrapper mx-auto mt-5">
+                    <table id="dtLectures" class="table table-fixed table-responsive" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Date
+                                </th>
+                                <th>Event
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>Sept 07 - Sept 13</td>
+                                <td>Course registration week.</td>
+                            </tr>
+
+                            <tr>
+                                <td>Oct 09</td>
+                                <td>Last date to drop courses.</td>
+                            </tr>
+                            <tr>
+                                <td>Oct 19 - Oct 25</td>
+                                <td>First sessionals.</td>
+                            </tr>
+                            <tr>
+                                <td>Oct 26 - Nov 01</td>
+                                <td>Student week.</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 27</td>
+                                <td>Last date for withdrawing courses/semester.</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 30 - Dec 06</td>
+                                <td>Second sessionals.</td>
+                            </tr>
+                            <tr>
+                                <td>Jan 01</td>
+                                <td>Last date for classes/attendance lock.</td>
+                            </tr>
+                            <tr>
+                                <td>Jan 04 - Jan 17</td>
+                                <td>Terminal exams.</td>
+                            </tr>
+                            <tr>
+                                <td>Jan 18 - Jan 22</td>
+                                <td>Internal vivas FYP.</td>
+                            </tr>
+                            <tr>
+                                <td>Jan 25</td>
+                                <td>Final result.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Lectures Ends-->
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- Bootstrap core JavaScript -->
+        <script src=" vendor/jquery/jquery.min.js "></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+        <!-- Menu Toggle Script -->
+        <script>
+            $("#menu-toggle ").click(function(e) {
+                e.preventDefault();
+                $("#wrapper ").toggleClass("toggled ");
+            });
+        </script>
+        <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+
+        <script>
+            // alert($('#dtLectures tbody tr').length);
+            $(document).ready(function() {
+                $('#dtLectures').DataTable({
+                    "bPaginate": false,
+                    "bLengthChange": false,
+                    "bFilter": true,
+                    "bInfo": false,
+                    "bAutoWidth": false,
+                    "bSort": false,
+                    "oLanguage": {
+                        "sSearch": ""
+                    }
+                });
+                $('.dataTables_length').addClass('bs-select');
+                $(".dataTables_filter input").attr("placeholder", " Search...");
+            });
+        </script>
+
+        <script>
+            var remLectures = 32 - $('#dtLectures tbody tr').length;
+            document.getElementById("rem-lectures").innerHTML = "<b>Remaining Lectures: </b>" + remLectures;
+        </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BSE - 7A</title>
+    <link rel="icon" href="icon.png" type="image/icon type">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading"><b>BSE - 7A</b></div>
+            <div class="list-group list-group-flush">
+                <a href="index.html" class="list-group-item list-group-item-action bg-light">Data Mining</a>
+                <a href="dm-lab.html" class="list-group-item list-group-item-action bg-light">Data Mining Lab</a>
+                <a href="sw-testing.html" class="list-group-item list-group-item-action bg-light">Software Testing</a>
+                <a href="sw-testing-lab.html" class="list-group-item list-group-item-action bg-light">Software Testing Lab</a>
+                <a href="ds.html" class="list-group-item list-group-item-action bg-light">Data Science</a>
+                <a href="de.html" class="list-group-item list-group-item-action bg-light">Differential Equations</a>
+                <a href="assign.html" class="list-group-item list-group-item-action bg-light">Assignments</a>
+                <a href="quiz.html" class="list-group-item list-group-item-action bg-light">Quizzes</a>
+                <a href="tt.html" class="list-group-item list-group-item-action bg-light">Time Table</a>
+                <a href="rem.html" class="list-group-item list-group-item-action bg-light">Reminders</a>
+                <a href="credits.html" class="list-group-item list-group-item-action bg-light">Credits</a>
+
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-info" id="menu-toggle"><i class="fas fa-bars"></i></button>
+                <marquee></marquee>
+
+
+            </nav>
+
+            <br>
+            <h6 class="text-center">Timetable - Sept 14, 2020</h6>
+            <img src="tt.PNG" class="img-fluid mx-auto d-block">
+
+            <hr style="height:1px;border:none;color:#333;background-color:#333;">
+            <!--Subject Information Ends-->
+
+
+            <br>
+
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- Bootstrap core JavaScript -->
+        <script src=" vendor/jquery/jquery.min.js "></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+        <!-- Menu Toggle Script -->
+        <script>
+            $("#menu-toggle ").click(function(e) {
+                e.preventDefault();
+                $("#wrapper ").toggleClass("toggled ");
+            });
+        </script>
+        <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+
+        <script>
+            // alert($('#dtLectures tbody tr').length);
+            $(document).ready(function() {
+                $('#dtLectures').DataTable({
+                    "bPaginate": false,
+                    "bLengthChange": false,
+                    "bFilter": true,
+                    "bInfo": false,
+                    "bAutoWidth": false,
+                    "oLanguage": {
+                        "sSearch": ""
+                    }
+                });
+                $('.dataTables_length').addClass('bs-select');
+                $(".dataTables_filter input").attr("placeholder", " Search...");
+            });
+        </script>
+
+        <script>
+            var remLectures = 32 - $('#dtLectures tbody tr').length;
+            document.getElementById("rem-lectures").innerHTML = "<b>Remaining Lectures: </b>" + remLectures;
+        </script>
+
+        <script>
+            var b = new Date();
+            var month = new Array();
+            month[0] = "January";
+            month[1] = "February";
+            month[2] = "March";
+            month[3] = "April";
+            month[4] = "May";
+            month[5] = "June";
+            month[6] = "JULY";
+            month[7] = "AUGUST";
+            month[8] = "September";
+            month[9] = "October";
+            month[10] = "November";
+            month[11] = "December";
+            switch (b.getDate()) {
+                default: document.getElementById('pending-work').innerHTML = "No pending quiz for today.";
+            }
+        </script>
+
+</body>
+
+</html>
