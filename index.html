@@ -148,26 +148,10 @@
             document.getElementById("rem-lectures").innerHTML = "<b>Remaining Lectures: </b>" + remLectures;
         </script>
 
-
+        <!--notificaitons-->
         <script>
-            function showNotification() {
-                const notification = new Notification("Goodluck for 7th semester!", {
-                    body: "You will receive 7th semester updates from this website from now on.",
-                    icon: "icon.png"
-                });
-            }
-
-            // default, granted, denied
-            console.log(Notification.permission);
-            if (Notification.permission === "granted") {
-                showNotification();
-            } else if (Notification.permission !== "denied") {
-                Notification.requestPermission().then(permission => {
-                    if (permission === "granted") {
-                        showNotification();
-                    }
-                });
-            }
+            Notification.requestPermission();
+            new Notification("Subscribe");
         </script>
 
 
