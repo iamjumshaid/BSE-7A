@@ -117,26 +117,6 @@
                 $("#wrapper ").toggleClass("toggled ");
             });
         </script>
-        <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
-        <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
-
-        <script>
-            // alert($('#dtLectures tbody tr').length);
-            $(document).ready(function() {
-                $('#dtLectures').DataTable({
-                    "bPaginate": false,
-                    "bLengthChange": false,
-                    "bFilter": true,
-                    "bInfo": false,
-                    "bAutoWidth": false,
-                    "oLanguage": {
-                        "sSearch": ""
-                    }
-                });
-                $('.dataTables_length').addClass('bs-select');
-                $(".dataTables_filter input").attr("placeholder", " Search...");
-            });
-        </script>
 
         <script>
             var remLectures = 32 - $('#dtLectures tbody tr').length;
