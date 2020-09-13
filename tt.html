@@ -75,51 +75,6 @@
                 $("#wrapper ").toggleClass("toggled ");
             });
         </script>
-        <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
-        <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
-
-        <script>
-            // alert($('#dtLectures tbody tr').length);
-            $(document).ready(function() {
-                $('#dtLectures').DataTable({
-                    "bPaginate": false,
-                    "bLengthChange": false,
-                    "bFilter": true,
-                    "bInfo": false,
-                    "bAutoWidth": false,
-                    "oLanguage": {
-                        "sSearch": ""
-                    }
-                });
-                $('.dataTables_length').addClass('bs-select');
-                $(".dataTables_filter input").attr("placeholder", " Search...");
-            });
-        </script>
-
-        <script>
-            var remLectures = 32 - $('#dtLectures tbody tr').length;
-            document.getElementById("rem-lectures").innerHTML = "<b>Remaining Lectures: </b>" + remLectures;
-        </script>
-
-        <script>
-            var b = new Date();
-            var month = new Array();
-            month[0] = "January";
-            month[1] = "February";
-            month[2] = "March";
-            month[3] = "April";
-            month[4] = "May";
-            month[5] = "June";
-            month[6] = "JULY";
-            month[7] = "AUGUST";
-            month[8] = "September";
-            month[9] = "October";
-            month[10] = "November";
-            month[11] = "December";
-            switch (b.getDate()) {
-                default: document.getElementById('pending-work').innerHTML = "No pending quiz for today.";
-            }
-        </script>
 
 
 </body>
