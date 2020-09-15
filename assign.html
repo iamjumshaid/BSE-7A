@@ -86,17 +86,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!--
                             <tr>
-                                <td>--</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                <td>2011/04/25</td>
-                                <td>$320,800</td>
+                                <td>Software Testing Lab</td>
+                                <td>Lab task 01</td>
                                 <td>---</td>
+                                <td>---</td>
+                                <td>Sept 16, 3:50 PM</td>
+                                <td>Make Use Case, Class, and Sequence diagram of your FYP (IN GROUP)</td>
                             </tr>
-                                -->
                         </tbody>
                     </table>
                 </div>
@@ -116,26 +113,6 @@
             $("#menu-toggle ").click(function(e) {
                 e.preventDefault();
                 $("#wrapper ").toggleClass("toggled ");
-            });
-        </script>
-        <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
-        <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
-
-        <script>
-            // alert($('#dtLectures tbody tr').length);
-            $(document).ready(function() {
-                $('#dtLectures').DataTable({
-                    "bPaginate": false,
-                    "bLengthChange": false,
-                    "bFilter": true,
-                    "bInfo": false,
-                    "bAutoWidth": false,
-                    "oLanguage": {
-                        "sSearch": ""
-                    }
-                });
-                $('.dataTables_length').addClass('bs-select');
-                $(".dataTables_filter input").attr("placeholder", " Search...");
             });
         </script>
 
@@ -160,7 +137,11 @@
             month[10] = "November";
             month[11] = "December";
             switch (b.getDate()) {
-                default: document.getElementById('pending-work').innerHTML = "No pending work for today.";
+                case 16:
+                    document.getElementById('pending-work').innerHTML = "<li> Complete Software Testing Lab Task 01 (See below table)</li>";
+                    break;
+                default:
+                    document.getElementById('pending-work').innerHTML = "No pending work for today.";
             }
         </script>
 
