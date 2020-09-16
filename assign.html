@@ -87,20 +87,20 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Data Mining Lab</td>
-                                <td>Lab task 01</td>
-                                <td>Watch lab 01 video</td>
-                                <td>On MS-Teams</td>
-                                <td>Sept 16, 7:00 PM</td>
-                                <td>Make a word document and implement lab manual.</td>
-                            </tr>
-                            <tr>
                                 <td>Software Testing Lab</td>
                                 <td>Lab task 01</td>
                                 <td>---</td>
                                 <td>---</td>
                                 <td>---</td>
                                 <td>Make Use Case, Class, Sequence, System Sequence, and Activity diagram of your FYP (IN GROUP)</td>
+                            </tr>
+                            <tr class="expired">
+                                <td>Data Mining Lab</td>
+                                <td>Lab task 01</td>
+                                <td>Watch lab 01 video</td>
+                                <td>On MS-Teams</td>
+                                <td>Sept 16, 7:00 PM</td>
+                                <td>Make a word document and implement lab manual.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -145,11 +145,10 @@
             month[10] = "November";
             month[11] = "December";
             switch (b.getDate()) {
-                case 16:
-                    document.getElementById('pending-work').innerHTML = "<li> Complete Data Mining Lab Task 01 (See below table)</li>";
-                    break;
-                default:
-                    document.getElementById('pending-work').innerHTML = "No pending work for today.";
+                // case 16:
+                //    document.getElementById('pending-work').innerHTML = "<li> Complete Data Mining Lab Task 01 (See below table)</li>";
+                //  break;
+                default: document.getElementById('pending-work').innerHTML = "No pending work for today.";
             }
         </script>
 
