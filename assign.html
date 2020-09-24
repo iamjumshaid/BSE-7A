@@ -86,7 +86,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="expired">
                                 <td>Software Testing Lab</td>
                                 <td>Lab task 01</td>
                                 <td>---</td>
@@ -161,9 +161,9 @@
             month[10] = "November";
             month[11] = "December";
             switch (b.getDate()) {
-		 case 24:
-                    document.getElementById('pending-work').innerHTML = "<li> Complete SW-Testing Lab Task 01 (See below table)</li>";
-                  break;
+		// case 24:
+                  //  document.getElementById('pending-work').innerHTML = "<li> Complete SW-Testing Lab Task 01 (See below table)</li>";
+                  //break;
                 default: document.getElementById('pending-work').innerHTML = "No pending work for today.";
             }
         </script>
