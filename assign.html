@@ -94,12 +94,12 @@
                                 <td>October 09, 12:00 PM</td>
                                 <td>Performing text analysis - Assignment can be done individually, pair of 02, or group of 03.</td>
                             </tr>
-                            <tr>
+                            <tr class="expired">
                                 <td>Differential Equations</td>
                                 <td>Assignment 01</td>
                                 <td>Download from portal</td>
                                 <td>CUOnline</td>
-                                <td>October 03, 7:30 PM</td>
+                                <td>October 03, 7:00 PM</td>
                                 <td>Solve the questions handwritten with your name and registration at the top of each side of paper.</td>
                             </tr>
                             <tr>
@@ -107,7 +107,7 @@
                                 <td>Lab task 04</td>
                                 <td>---</td>
                                 <td>CUOnline</td>
-                                <td>Oct 01, (Time unkmown)</td>
+                                <td>Oct 01, 9:00 PM</td>
                                 <td>Make UML diagrams for scenario.</td>
                             </tr>
                             <tr class="expired">
@@ -201,8 +201,11 @@
             month[10] = "November";
             month[11] = "December";
             switch (b.getDate()) {
-		 case 01:
-                    document.getElementById('pending-work').innerHTML = "<li> Complete SW-Testing Lab Task 04 (See below table)</li>";
+		 case 3:
+                    document.getElementById('pending-work').innerHTML = "<li>Submit DE Assignmnet 01, before 7:00 PM.</li>";
+                  break;
+		 case 9:
+                    document.getElementById('pending-work').innerHTML = "<li>Submit DS Assignment 01, before 12:00 PM (AFTERNOON)</li>";
                   break;
                 default: document.getElementById('pending-work').innerHTML = "No pending work for today.";
             }
