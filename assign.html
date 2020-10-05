@@ -99,7 +99,7 @@
                                 <td>Lab task 04</td>
                                 <td>Watch lab 04 videos</td>
                                 <td>On MS-Teams</td>
-                                <td>Oct 05, (Time unknown)</td>
+                                <td>Oct 06, 11:00 AM</td>
                                 <td>Make a word document and implement lab manual.</td>
                             </tr>
                             <tr class="expired">
@@ -211,6 +211,9 @@
             switch (b.getDate()) {
 		 case 9:
                     document.getElementById('pending-work').innerHTML = "<li>Submit DS Assignment 01, before 12:00 PM (AFTERNOON)</li>";
+                  break;
+		  case 6:
+                    document.getElementById('pending-work').innerHTML = "<li>Submit DM Lab Task 04, before 11:00 AM </li>";
                   break;
                 default: document.getElementById('pending-work').innerHTML = "No pending work for today.";
             }
