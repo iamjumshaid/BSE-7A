@@ -83,7 +83,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="expired">
                                 <td>DWH-DM</td>
                                 <td>Quiz 01</td>
                                 <td>---</td>
@@ -133,9 +133,9 @@
             month[10] = "November";
             month[11] = "December";
             switch (b.getDate()) {
-		case 7:
-			document.getElementById('pending-work').innerHTML = "DWH-DM Quiz 01 will be taken today!";
-			break;
+		//case 7:
+			//document.getElementById('pending-work').innerHTML = "DWH-DM Quiz 01 will be taken today!";
+			//break;
                 default: document.getElementById('pending-work').innerHTML = "No pending quiz for today.";
             }
         </script>
