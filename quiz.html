@@ -90,7 +90,7 @@
                                 <td>Oct 13, Tuesday</td>
                                 <td>Lect 01 and Lect 02 included.</td>
                             </tr>
-                            <tr>
+                            <tr class="expired">
                                 <td>Data Science</td>
                                 <td>Quiz 01</td>
                                 <td>---</td>
@@ -147,9 +147,6 @@
             month[10] = "November";
             month[11] = "December";
             switch (b.getDate()) {
-		case 12:
-			document.getElementById('pending-work').innerHTML = "Data Science Quiz 01 will be taken today!";
-			break;
 		case 13:
 			document.getElementById('pending-work').innerHTML = "SW-Testing Quiz 01 will be taken today!";
 			break;
