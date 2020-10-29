@@ -86,6 +86,14 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                                <td>Software Testing Lab</td>
+                                <td>Lab task 07</td>
+                                <td>Available on CUOnline assignments section</td>
+                                <td>CUOnline</td>
+                                <td>Oct 30, 11:00 AM</td>
+                                <td>For robot scenario: write program(any language) | perform BVA | write 3 valid and invalid test cases</td>
+                            </tr>
 			    <tr class="expired">
                                 <td>Data Mining Lab</td>
                                 <td>Lab task 05</td>
@@ -233,9 +241,12 @@
             month[10] = "November";
             month[11] = "December";
             switch (b.getDate()) {
-		// case 13:
-                  //  document.getElementById('pending-work').innerHTML = "<li>Submit Lab task 05 DM lab, before 10:00 AM</li>";
-                  //break;
+		case 29:
+                    document.getElementById('pending-work').innerHTML = "<li>Submit Lab task 07 SW-Testing, before Oct 30, 11:00 AM</li>";
+                    break;
+		case 30:
+                    document.getElementById('pending-work').innerHTML = "<li>Submit Lab task 07 SW-Testing today before 11:00 AM</li>";
+                    break;
                 default: document.getElementById('pending-work').innerHTML = "No pending work for today.";
             }
         </script>
