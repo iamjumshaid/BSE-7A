@@ -87,6 +87,14 @@
                         </thead>
                         <tbody>
                             <tr>
+                                <td>Software Testing Lab</td>
+                                <td>Lab task 07-08</td>
+                                <td>Available on CUOnline assignments section</td>
+                                <td>CUOnline</td>
+                                <td>Nov 06, Friday 4:00 PM</td>
+                                <td>Introduction to MS-Project</td>
+                            </tr>
+                            <tr>
                                 <td>Differential Equation</td>
                                 <td>Assignment 02</td>
                                 <td>Available on CUOnline assignments section.</td>
@@ -267,6 +275,9 @@
             switch (b.getDate()) {
 		case 5:
                     document.getElementById('pending-work').innerHTML = "<li>Submit Assignment 02 Data Science today before 06:00 PM</li>";
+                    break;
+		case 6:
+                    document.getElementById('pending-work').innerHTML = "<li>Submit DE Assignment 02 before 12:00 PM</li><li>Submit SW-Test Lab task 07 before 4:00 PM</li>";
                     break;
                 default: document.getElementById('pending-work').innerHTML = "No pending work for today.";
             }
