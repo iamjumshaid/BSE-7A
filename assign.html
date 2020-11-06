@@ -62,9 +62,11 @@
                 </div>
                 <hr style="height:1px;border:none;color:#333;background-color:#333;">
                 <!--Subject Information Ends-->
-
-
-                <br>
+                <div class="row">
+                    <div class="col-md-6" id="rem-lectures">
+                        <b>Total assignmnets this semester: </b>
+                    </div>
+                </div>
                 <!--Lectures-->
 
                 <div class="wrapper mx-auto mt-5">
@@ -279,6 +281,10 @@
                     
                 default: document.getElementById('pending-work').innerHTML = "No pending work for today.";
             }
+        </script>
+	<script>
+            var remLectures = $('#dtLectures tbody tr').length;
+            document.getElementById("rem-lectures").innerHTML = "<b>Total assignments this semester: </b>" + remLectures;
         </script>
 
 </body>
