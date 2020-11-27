@@ -88,14 +88,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="expired">
                                 <td>DE</td>
                                 <td>Assignment 03</td>
                                 <td>---</td>
                                 <td>---</td>
                                 <td>2nd sessional marks uploaded as assignment 03</td>
                             </tr>
-			    <tr>
+			    <tr class="expired">
                                 <td>Data Mining Lab</td>
                                 <td>Lab task 08</td>
                                 <td>---</td>
@@ -322,9 +322,9 @@
             month[10] = "November";
             month[11] = "December";
             switch (b.getDate()) {
-                case 27:
-                    document.getElementById('pending-work').innerHTML = "<li>Submit Lab Task 08 Data Mining today.</li>";
-                    break;
+               // case 27:
+           //         document.getElementById('pending-work').innerHTML = "<li>Submit Lab Task 08 Data Mining today.</li>";
+            //        break;
                 default: document.getElementById('pending-work').innerHTML = "No pending work for today.";
             }
         </script>
