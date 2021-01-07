@@ -46,7 +46,7 @@
         <div id="page-content-wrapper">
             <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                 <button class="btn btn-info" id="menu-toggle"><i class="fas fa-bars"></i></button>
-
+		<marquee class="text-danger" id="sem"></marquee>
 
             </nav>
             <div class="container-fluid">
@@ -604,7 +604,10 @@
 
         <script>
             var remLectures = 32 - $('#dtLectures tbody tr').length;
+	    var today = new Date();
+	    var semEnd = 13 - today.getDate();
             document.getElementById("rem-lectures").innerHTML = "<b>Remaining Lectures: </b>" + remLectures;
+	    document.getElementById("sem").innerHTML = "<b>Semester ending in " + semEnd + " days.</b>";
             let button = document.querySelector('.dar')
             button.addEventListener('click', () => {
                 document.documentElement.classList.toggle('dark-mode')
