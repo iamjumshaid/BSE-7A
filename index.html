@@ -46,7 +46,7 @@
         <div id="page-content-wrapper">
             <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                 <button class="btn btn-info" id="menu-toggle"><i class="fas fa-bars"></i></button>
-		<marquee class="text-danger" id="sem"></marquee>
+		<marquee class="text-success" id="sem"></marquee>
 
             </nav>
             <div class="container-fluid">
@@ -610,7 +610,7 @@
 	    var today = new Date();
 	    var semEnd = 20 - today.getDate();
             document.getElementById("rem-lectures").innerHTML = "<b>Remaining Lectures: </b>" + remLectures;
-	    document.getElementById("sem").innerHTML = "<b>Semester ending in " + semEnd + " days.</b>";
+	    document.getElementById("sem").innerHTML = "<b>7th Semester has been completed. Result on January 25, 2021.</b>";
             let button = document.querySelector('.dar')
             button.addEventListener('click', () => {
                 document.documentElement.classList.toggle('dark-mode')
